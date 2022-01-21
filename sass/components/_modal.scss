@@ -143,6 +143,12 @@
   & a {
     color: $accent-color;
     text-decoration-skip-ink: none;
+    white-space: nowrap;
+    font-size: 11px;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
 
@@ -177,4 +183,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.modal-form__checkbox-text {
+  font-size: 11px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: left;
+  vertical-align: top;
+  color: $primary-text-color;
+  white-space: nowrap;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }

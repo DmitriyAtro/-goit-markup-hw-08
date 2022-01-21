@@ -694,7 +694,9 @@
                   <use href="images/sprite.svg#icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю &nbsp;
+              <span class="modal-form__checkbox-text">
+                Соглашаюсь с рассылкой и принимаю &nbsp;</span
+              >
               <a href="#">Условия договора</a>
             </label>
             <button type="submit" class="button primary">Отправить</button>
@@ -705,7 +707,7 @@
     <!--Footer-->
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <div>
+        <div class="page-footer__contacts">
           <a href="/" class="logo"
             >Web<span class="logo-part page-footer__logo-part">Studio</span></a
           >
@@ -722,10 +724,10 @@
                 >
               </li>
               <li class="page-footer__item">
-                <a href="mailto:info@example.com" class="page-footer__contacts">info@example.com</a>
+                <a href="mailto:info@example.com" class="page-footer__data">info@example.com</a>
               </li>
               <li class="page-footer__item">
-                <a href="tel:+380991111111" class="page-footer__contacts">+38 099 111 11 11</a>
+                <a href="tel:+380991111111" class="page-footer__data">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -763,24 +765,20 @@
             </li>
           </ul>
         </div>
-        <form class="subscribe-form">
-          <div class="subscribe-form__field">
-            <label for="subscribe" class="subscribe-form__label">подпишитесь на рассылку</label>
-            <input
-              type="text"
-              name="subscribe"
-              id="subscribe"
-              placeholder="E-mail"
-              class="subscribe-form__input"
-            />
-          </div>
-          <button type="submit" class="button-subscribe">
-            Подписаться
-            <svg class="subscribe-form__icon" width="24" height="24">
-              <use href="images/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+  <div class="footer-subscribe">
+            <form action="#" class="footer-subscribe__form">
+                <div class="footer-subscribe__wrapper">
+                    <label class="footer-subscribe__title" for="email">Подпишитесь на рассылку</label>
+                    <input class="footer-subscribe__input" type="email" name="user-mail" id="email" placeholder="E-mail">
+                </div>
+                    <button class="footer-subscribe__button" type="submit">Подписаться
+                        <svg class="footer-subscribe__icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+            </form>
+        </div>
+    </div>  
       </div>
     </footer>
     <script src="./js/modal.js"></script>

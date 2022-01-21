@@ -1,6 +1,19 @@
 .footer-social {
   display: inline-block;
-  margin-left: 70px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 102px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 206px;
+    height: 80px;
+    margin-right: 93px;
+    margin-left: 70px;
+  }
 }
 .footer-social__title {
   margin-bottom: 20px;
