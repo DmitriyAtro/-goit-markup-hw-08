@@ -1,9 +1,16 @@
+.projects {
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+}
 .projects__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  text-decoration: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
 }
 .projects__title {
   color: $title-text-color;
@@ -37,9 +44,21 @@
 }
 
 .projects__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .projects__name {
@@ -71,4 +90,9 @@
   padding: 63px 24px;
 
   color: $primary-bg-color;
+}
+.portfolio__box--small {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
 }
