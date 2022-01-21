@@ -9,3 +9,26 @@
   display: flex;
   align-items: center;
 }
+
+.header__menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  margin-left: 160px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__menu-icon {
+  width: 40px;
+  height: 40px;
+
+  .header__menu-button:hover &,
+  .header__menu-button:focus & {
+    fill: $accent-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

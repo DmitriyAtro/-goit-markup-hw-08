@@ -1,6 +1,15 @@
 .site-nav {
-  display: flex;
+  display: none;
   margin-left: 93px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 93px;
+  }
+  // @media screen and (max-width: 320px) {
+  //   margin-top: 16px;
+  //   margin-bottom: 16px;
+  // }
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
