@@ -20,6 +20,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -1401,7 +1403,6 @@ img {
 .modal-form__policy-box a {
   color: #2196f3;
   text-decoration-skip-ink: none;
-  white-space: nowrap;
   font-size: 11px;
 }
 
@@ -1458,13 +1459,22 @@ img {
   text-align: left;
   vertical-align: top;
   color: #757575;
-  white-space: nowrap;
 }
 
 @media screen and (min-width: 1200px) {
   .modal-form__checkbox-text {
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+
+.modal.container {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal.container {
+    width: 528px;
   }
 }
 
@@ -1702,8 +1712,8 @@ img {
 
 .mobile-menu__close {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 25px;
+  right: 25px;
   background-color: transparent;
   border: none;
   padding: 0;

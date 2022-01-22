@@ -143,7 +143,7 @@
   & a {
     color: $accent-color;
     text-decoration-skip-ink: none;
-    white-space: nowrap;
+    // white-space: nowrap;
     font-size: 11px;
     @media screen and (min-width: 1200px) {
       font-size: 14px;
@@ -191,10 +191,16 @@
   text-align: left;
   vertical-align: top;
   color: $primary-text-color;
-  white-space: nowrap;
+  // white-space: nowrap;
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+.modal.container {
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
   }
 }
