@@ -1,5 +1,6 @@
 .projects {
   padding-top: 60px;
+  padding-bottom: 94px;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
   }
@@ -28,9 +29,11 @@
 }
 
 .projects__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -66,6 +69,7 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .projects__wraper {
@@ -84,15 +88,17 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects__description {
-  font-size: 18px;
-  line-height: 28px;
   letter-spacing: 0.03em;
+  font-size: 18px;
   padding: 63px 24px;
-
+  line-height: 28px;
   color: $primary-bg-color;
+  @media screen and (max-width: 380px) {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 33px 24px;
+  }
 }
 .portfolio__box--small {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-bottom: 56px;
-  }
+  flex-grow: 1;
 }

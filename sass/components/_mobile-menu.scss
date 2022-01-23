@@ -127,4 +127,10 @@
   letter-spacing: 0.02em;
   color: $accent-color;
   text-decoration: none;
+  @media screen and (max-width: 350px) {
+    font-size: 11px;
+  }
+}
+.mobile-menu__link.mobile-menu__link--active {
+  color: $accent-color;
 }

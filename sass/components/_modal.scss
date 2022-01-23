@@ -139,7 +139,7 @@
   align-items: center;
   margin-bottom: 30px;
   margin-top: 20px;
-  margin-left: 14px;
+  margin-left: 10px;
   & a {
     color: $accent-color;
     text-decoration-skip-ink: none;
@@ -147,6 +147,10 @@
     font-size: 11px;
     @media screen and (min-width: 1200px) {
       font-size: 14px;
+      line-height: 1.71;
+    }
+    @media screen and (max-width: 350px) {
+      font-size: 10px;
       line-height: 1.71;
     }
   }
@@ -197,7 +201,13 @@
     font-size: 14px;
     line-height: 1.71;
   }
+  @media screen and (max-width: 350px) {
+    font-size: 10px;
+    line-height: 1.71;
+    margin-left: 0;
+  }
 }
+
 .modal.container {
   width: 100%;
   @media screen and (min-width: 1200px) {

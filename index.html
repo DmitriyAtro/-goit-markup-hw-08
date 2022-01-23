@@ -52,7 +52,9 @@
             <div class="mobile-menu__navigation">
               <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
-                  <a class="mobile-menu__link link" href="./index.html">Студия</a>
+                  <a class="mobile-menu__link link mobile-menu__link--active" href="./index.html"
+                    >Студия</a
+                  >
                 </li>
                 <li class="mobile-menu__item">
                   <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
@@ -765,20 +767,26 @@
             </li>
           </ul>
         </div>
-  <div class="footer-subscribe">
-            <form action="#" class="footer-subscribe__form">
-                <div class="footer-subscribe__wrapper">
-                    <label class="footer-subscribe__title" for="email">Подпишитесь на рассылку</label>
-                    <input class="footer-subscribe__input" type="email" name="user-mail" id="email" placeholder="E-mail">
-                </div>
-                    <button class="footer-subscribe__button" type="submit">Подписаться
-                        <svg class="footer-subscribe__icon" width="24" height="24">
-                            <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
-                    </button>
-            </form>
+        <div class="footer-subscribe">
+          <form action="#" class="footer-subscribe__form">
+            <div class="footer-subscribe__wrapper">
+              <label class="footer-subscribe__title" for="email">Подпишитесь на рассылку</label>
+              <input
+                class="footer-subscribe__input"
+                type="email"
+                name="user-mail"
+                id="email"
+                placeholder="E-mail"
+              />
+            </div>
+            <button class="footer-subscribe__button" type="submit">
+              Подписаться
+              <svg class="footer-subscribe__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
-    </div>  
       </div>
     </footer>
     <script src="./js/modal.js"></script>
